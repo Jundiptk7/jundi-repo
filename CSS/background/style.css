@@ -1,0 +1,24 @@
+body {
+    /* background-color: lightblue;
+    background-image: url(gambar/living\ room.PNG);
+    background-repeat: no-repeat;
+    background-position: center ;
+     */
+    
+    /* shorthand  */
+    background: black url(gambar/gambar3.jpg) center no-repeat ;
+    /* background-size: 50%; */
+    /* background-position-x: 10%;
+    background-position-y: 90%; */
+    /* background-attachment: scroll; */
+}
+
+
+
+
+h1 {
+    /* background-color: darkorange; */
+    text-align: center;
+    font-size: 70px;
+    color: yellow;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            text-align: center;
+            margin: 30px;
+            color: white;
+        }
+
+    img {
+        display: block;
+        width: 100%;
+        /* margin: 5px 0; */
+        box-sizing: border-box;
+    }
+
+    .gallery {
+        width: 80%;
+        margin: 20px auto;
+        border: 10px solid white;
+        list-style: none;
+        background-color: rgb(61, 47, 122);
+        box-shadow: 0px 0px 2px 2px rgb(143, 145, 146);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 5px;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <h2>my gallery</h2>
+    <ul class="gallery">
+        <li><img src="img/sky1.jpg" alt=""></li>
+        <li><img src="img/sky2.jpg" alt=""></li>
+        <li><img src="img/sky3.jpg" alt=""></li>
+        <li><img src="img/sky4.jpg" alt=""></li>
+        <li><img src="img/sky5.jpg" alt=""></li>
+        <li><img src="img/sky1 - Copy.jpg" alt=""></li>
+        <li><img src="img/sky2 - Copy.jpg" alt=""></li>
+        <li><img src="img/sky3 - Copy.jpg" alt=""></li>
+        <li><img src="img/sky4 - Copy.jpg" alt=""></li>
+        <li><img src="img/sky5 - Copy.jpg" alt=""></li>
+    </ul>
+</body>
+</html>

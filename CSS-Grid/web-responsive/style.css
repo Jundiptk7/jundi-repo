@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #ddd;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+/* container */
+.container {
+    display: grid;
+    gap: 10px;
+}
+
+/* header */
+.header {
+    display: grid;
+    grid-template-areas: 
+        'hero hero features-1'
+        'hero hero features-2';
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 350px;
+    background-image: url(img/travel.jpg);
+    background-size: cover;
+    background-position: center ;
+    padding: 50px;
+}
+
+.hero > * {
+    display: none;
+}
+
+.features {
+    background-color: black;
+    color: white;
+    display: grid;
+    /* justify-content: center;
+    align-content: center; */
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.features-1 {
+    grid-area: features-1;
+    background-image: url(img/travel2.jpeg);
+    background-size: cover;
+    padding: 10px;
+}
+
+.features-2 {
+    grid-area: features-2;
+    background-image: url(img/travel3.jpeg);
+    background-size: cover;
+    padding: 10px;
+}
+
+.features .price {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+/* navigation */
+.menu {
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.menu .brand {
+    font-size: 1.3em;
+    color: darkslategray;
+}
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+}
+
+.menu a {
+    display: block;
+    background-color: cyan;
+    color: darkred;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* hamburger-menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    left: -7px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+/* hamburger-menu-animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: cyan;
+    transform: rotate(45deg) translate(1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: cyan;
+    transform: rotate(-45deg) translate(0px, 1px);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.service {
+    background-color: cyan;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.service .icon {
+    font-size: 3em;
+}
+
+.service h3 {
+    font-size: 1.2em;
+}
+
+/* gallery */
+.gallery {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+}
+
+.gallery h2 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* responsive breakpoint */
+@media (max-width: 1024px ) {
+    .menu {
+        order: inherit;
+        grid-template-columns: 1fr;
+    }
+
+    .menu .brand {
+        display: none;
+    }
+
+    .hero > * {
+        display: block;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        order: -1;
+        justify-items: end;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .menu ul {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(83, 83, 83);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 1;
+        transform: translateY(-100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .menu ul.slide {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
+    .header {
+        grid-template-areas: 
+            'hero'
+            'features-1'
+            'features-2' ;
+    }
+}
+
+
+
+
+
+
+
+
+

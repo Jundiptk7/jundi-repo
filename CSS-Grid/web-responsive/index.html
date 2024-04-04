@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">nature</h2>
+                <p class="sub-heading">mountain</p>
+            </div>
+            <div class="features features-1">
+                <h4 class="price">1</h4>
+                <p class="item">travel1</p>
+            </div>
+            <div class="features features-2">
+                <h4 class="price">2</h4>
+                <p class="item">travel2</p>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>zaid travel</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">home</a></li>
+                <li><a href="">product</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">gallery</a></li>
+            </ul>
+        </nav>
+
+        <section class="services">
+            <div class="service">
+                <div class="icon">1</div>
+                <h3>satu</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Consequuntur tempora sit vitae culpa eum facere.</p>
+            </div>
+            <div class="service">
+                <div class="icon">2</div>
+                <h3>dua</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Consequuntur tempora sit vitae culpa eum facere.</p>
+            </div>
+            <div class="service">
+                <div class="icon">3</div>
+                <h3>tiga</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Consequuntur tempora sit vitae culpa eum facere.</p>
+            </div>
+            <div class="service">
+                <div class="icon">4</div>
+                <h3>empat</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Consequuntur tempora sit vitae culpa eum facere.</p>
+            </div>
+            
+        </section>
+
+        <section class="gallery">
+            <h2>gallery</h2>
+            <img src="gallery/mount1.jpg" alt="1">
+            <img src="gallery/mount2.jpg" alt="2">
+            <img src="gallery/mount3.jpg" alt="3">
+            <img src="gallery/mount4.jpg" alt="4">
+            <img src="gallery/mount5.jpg" alt="5">
+            <img src="gallery/starry-night1.jpg" alt="6">
+            <img src="gallery/starry-night2.jpg" alt="7">
+            <img src="gallery/starry-night3.jpg" alt="8">
+            <img src="gallery/starry-night4.jpg" alt="9">
+            <img src="gallery/starry-night5.jpg" alt="10">
+        </section>
+
+    </div>
+    <script>
+            const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+</html>

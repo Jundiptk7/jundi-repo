@@ -1,0 +1,51 @@
+/* em */
+/* .kotak {
+    font-size: 30px;
+}
+
+.kotak h1 {
+    font-size: 1em;
+}
+
+.kotak p {
+    font-size: 2em;
+} */
+
+/* rem */
+/* html {
+    font-size: 50px;
+}
+
+.kotak {
+    font-size: 30px;
+}
+
+.kotak h1 {
+    font-size: 1rem;
+}
+
+.kotak p {
+    font-size: 2rem;
+} */
+
+/* ch */
+/* .kotak p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 60ch;
+    text-align: justify;
+} */
+
+/* vh&vw */
+/* .kotak {
+    background-color: gold;
+    height: 100vh;
+} */
+
+/* vmin&vmax */
+.kotak {
+    background-color: gold;
+    /* height: 100vmin;
+    width: 100vmin; */
+    /* height: 100vmax;
+    width: 100vmax; */
+}

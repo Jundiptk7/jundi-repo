@@ -1,0 +1,84 @@
+.hello:link {
+    color:red ;
+}
+
+.hello:hover {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+    text-decoration: line-through;
+}
+
+.hello:active {
+    color: saddlebrown;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.hello:visited {
+    color: darkgreen;
+}
+
+
+li:first-child a {
+    font-size: larger;
+    font-family: Impact, 
+    Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkslategray;
+}
+
+li:last-child a {
+    text-decoration: line-through;
+    font-size: 30px;
+    color: black;
+}
+
+/* urutan ke- */
+li:nth-child(5) a {
+    color: chartreuse;
+}
+
+/* kelipatan */
+/* li:nth-child(2n) a {
+    color: red;
+} */
+/* li:nth-child(3n) a {
+    color: lime;
+} */
+/* li:nth-child(2n+1) a {
+    color: yellow;
+} */
+
+/* genap */
+/* li:nth-child(even) a {
+    color: darkred;
+} */
+
+/* ganjil */
+li:nth-child(odd) a {
+    color: tomato;
+}
+
+li:nth-child(odd) a:hover {
+    color: black;
+}
+
+
+p:first-of-type {
+    font-size: 20px;
+    color: darkgray;
+}
+
+p:last-of-type {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+

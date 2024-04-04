@@ -1,0 +1,15 @@
+#p1 {
+    color: teal;
+}
+
+p {
+    color: chocolate;
+}
+
+ul#tim li {
+    color: blue;
+}
+
+ul#tim li.mu {
+    color: red;
+}

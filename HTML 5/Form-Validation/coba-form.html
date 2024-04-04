@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coba</title>
+    <style>
+        label {
+            display: block;
+            margin: 0;
+        }
+        .pria, .wanita {
+            display: inline;
+        }
+        .status {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <label for="nama">nama :</label> 
+            <input type="text" name="nama" id="nama" required autofocus
+            minlength="3" maxlength="8">
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="telepon">No HP</label>
+            <input type="tel" name="telepon" id="telepon" required 
+            pattern="(\+62|62|0)8[1-9][0-9]{6,9}$">
+        </div>
+        <div>
+            <label for="ttl">tanggal lahir</label>
+            <input type="date" name="ttl" id="ttl" required>
+        </div>
+        <div>
+            <label for="alamat">alamat</label>
+            <textarea name="alama" id="alamat" cols="30" rows="5"></textarea>
+        </div>
+        <br>
+        <div >
+            <label for="">gender</label>
+            <label class="pria" for="pria">pria</label><input type="radio" name="kelamin" id="pria">
+            <label class="wanita" for="wanita">wanita</label><input type="radio" name="kelamin" id="wanita">
+        </div>
+        <br>
+        <div>
+            <label for="">satus</label>
+            <label class="status" for="menikah">menikah</label><input type="radio" name="status" id="menikah">
+            <label class="status" for="jomblo">jomblo</label><input type="radio" name="status" id="jomblo">
+        </div>
+        <br>
+        <div>
+            <label for="pendidikan">pendidikan terakhir</label>
+            <select name="pendidikan terakhir" id="pendidikan">
+                <option value="tidak sekolah">tidak sekolah</option>
+                <option value="SD">SD</option>
+                <option value="SMP">SMP</option>
+                <option value="SMA">SMA</option>
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <button type="submit">kirim</button>
+        </div>
+    </form>
+</body>
+</html>

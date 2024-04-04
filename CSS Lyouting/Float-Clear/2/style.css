@@ -1,0 +1,23 @@
+.container {
+    width: 600px;
+    border: 1px solid red;
+    padding: 5px;
+    margin: auto;
+}
+
+.kotak { 
+    width: 80px;
+    height: 80px;
+    color: navy;
+    background-color: yellowgreen;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 80px;
+    margin: 2px;
+    float: right;
+}
+
+.kosong {
+    clear: right;
+}

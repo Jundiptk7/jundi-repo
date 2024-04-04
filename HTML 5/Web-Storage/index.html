@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+    <style>
+        a {
+            color: inherit;
+        }
+        .dark-mode {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>hallo jundi !</h1>
+
+    <!-- <a href="" onclick="gantiNama( )">ganti nama</a>
+    <a href="" onclick="hapusNama( )">hapus nama</a>
+    <a href="" class="toggle">dark mode</a>
+    <a href="" onclick="hapusStorage( )">hapus storage</a> -->
+    <script>
+        const judul = document.querySelector('h1');
+
+        let nama = localStorage.getItem('nama');
+        if(!nama) {
+            nama = prompt('masukan nama anda :');
+            localStorage.setItem('nama', nama);
+        }
+        
+        judul.innerHTML = `hallo, ${nama}!` ;
+        
+        // //ganti nama
+        // const gantiNama = (e) => {
+        //     nama = prompt('masukan nama baru anda :');
+        //     localStorage.setItem('nama', nama);
+        //     e.preventDefault ();
+        // }
+
+        // //hapus nama
+        // const hapusNama = (e) => {
+        //     localStorage.removeItem('nama', nama);
+        //     e.preventDefault ();
+        // }
+
+        // //hapus storage
+        // const hapusStorage = (e) => {
+        //     localStorage.clear( );
+        //     e.preventDefault ();
+        // }
+
+        // //dark mode
+        // const toggle = document.querySelector('.toggle');
+        // let tema = localStorage.getItem('tema');
+
+        // if (!tema) {
+        //     localStorage.setItem('tema', 'light');
+        // }
+        
+        // const darkMode = (e) => {
+        //     document.body,classList.add('dark-mode');
+        //     toggle.innerHTML = 'light mode';
+        //     localStorage.setItem('tema', 'dark');
+        //     e.preventDefault( );
+        // }
+
+        // const lightMode = (e) => {
+        //     document.body,classList.remov('dark-mode');
+        //     toggle.innerHTML = 'dark mode';
+        //     localStorage.setItem('tema', 'light');
+        //     e.preventDefault( );
+        // }
+
+        // if (tema === 'dark') {
+        //     darkMode( );
+        // }
+
+        // toggle.addEventListener('click', function (e) {
+        //     tema = localStorage.getItem('tema');
+
+        //     if (tema === 'light') {
+        //         darkMode( );
+        //     } else {
+        //         lightMode( );
+        //     }
+
+        //     e.preventDefault( );
+        // });
+        </script>
+
+</body>
+</html>

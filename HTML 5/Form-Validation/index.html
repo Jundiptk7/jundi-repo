@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            form {
+                width: 600px;
+                padding: 20px;
+            }
+            form div {
+                margin: 10px;
+                display: inline;
+            }
+            label {
+                display: block;
+            }
+            /* validasi mengunakan css */
+            input:invalid, 
+            input:required:invalid 
+            {
+                border: none;
+                outline: 2px solid red;
+                border-radius: 2px;
+            }
+            input:valid, 
+            input:required 
+            {
+                border: 1px solid black;
+                outline: inherit;
+                border-radius: inherit;
+            }
+        </style>
+</head>
+<body>
+    <form action="" method="post" autocomplete="off" novalidate>
+        <div>
+            <label for="nama">masukan nama :</label>
+            <!-- validasi menggunakan js -->
+            <input type="text" name="nama" id="nama" autofocus 
+            required minlength="2" maxlength="6" 
+            oninvalid="this.setCustomValidity('ini harus diisi!')">
+        </div>
+
+        <div>
+            <label for="email">masukan email :</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="no hp">masukan no hp :</label>
+            <input type="tel" name="no hp" id="no hp" pattern="(\+62|62|0)8[1-9][0-9]{6,9}$">
+        </div>
+
+        <div>
+            <label for="website">masukan url :</label>
+            <input type="url" name="website" id="website">
+        </div>
+
+        <div>
+            <label for="angka">masukan angka :</label>
+            <input type="number" name="angka" id="angka" min="2" max="50" step="5">
+        </div>
+
+        <div>
+            <label for="slider">masukan angka :</label>
+            <span class="awal"></span>
+            <input type="range" name="slider" id="slider" min="" max="100" step="5">
+            <span class="akhir"></span>
+        </div>
+        
+        <div>
+            <label for="tanggal">masukan tanggal :</label>
+            <input type="date" name="tanggal" id="tanggal">
+        </div>
+        
+        <div>
+            <label for="warna">masukan warna :</label>
+            <input type="color" name="warna" id="warna">
+            <span class="hexa"></span>
+        </div>
+        
+        <div>
+            <label for="kode pos">masukan kode pos :</label>
+            <input type="text" name="kode pos" id="kode pos" 
+            pattern="^([1-9])[0-9]{4}$">
+        </div>
+        
+        <div>
+            <button type="submit">kirim</button>
+        </div>
+    </form>
+    
+    <script>
+        const slider = document.querySelector('#slider');
+        const awal = document.querySelector('.awal');
+        const akhir = document.querySelector('.akhir');
+
+        awal.innerHTML = slider.min;
+        akhir.innerHTML = slider.value;
+
+        slider.addEventListener('change', function () {
+            akhir.innerHTML = slider.value;
+        });
+
+        const warna = document.querySelector('#warna');
+        const hexa = document.querySelector('.hexa');
+
+        hexa.innerHTML = warna.value;
+        
+        warna.addEventListener('input', function () {
+            hexa.innerHTML = warna.value;
+            hexa.style.color = warna.value;
+        });
+    </script>
+</body>
+</html>

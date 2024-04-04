@@ -1,0 +1,23 @@
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+    font-style: italic; 
+    color: darkorange;
+}
+
+/* shorthand */
+/* harus berurutan : font style, font variant, font weight, font size/line height, font family */
+/* h1 {
+    font: italic normal bolder 100px/20px 'Trebuchet MS';
+} */
+
+p {
+    font-family: Times, 'Times New Roman', serif;
+    font-size: 50px;
+    font-variant: small-caps;
+    font-style: italic;
+    line-height: 50px;
+    color: darkslategray;
+}
+

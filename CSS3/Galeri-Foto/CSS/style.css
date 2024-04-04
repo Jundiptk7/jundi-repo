@@ -1,0 +1,174 @@
+/* font */
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../Font/bebasneue-regular-webfont.woff) format('woff');
+}
+
+/* style utama */
+body {
+    font-size: 18px ;
+    line-height: 36px;
+    font-family: 'BebasNeue';
+    background-color: black;
+}
+
+h1 {
+    font-size: 80px;
+    color: white;
+    margin: 50px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px red;
+}
+
+.container {
+    width: 690px;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0 0 3px 3px rgba(255, 3, 3, 0.3);
+    border-radius: 15px;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    /* overflow: hidden; */
+    border: 4px solid darkgrey;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.gallery a img, .gallery li, 
+.gallery li figcaption {
+    border-radius: 50%;
+}
+
+.gallery li figcaption {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200, 0);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: lightgrey;
+    text-shadow: 1px 1px 1px black;
+    opacity: 0;
+    transition: 0.5s;
+    transform: scale(0) rotate(0deg);
+}
+
+.gallery li a:hover figcaption {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+
+}
+
+.clear {
+    clear: both;
+}
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(6, 14, 87, 0);
+    z-index: 9999;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(1, 6, 49, 0.7);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.8);
+    /* opacity: 0; */
+}
+
+.overlay:target img {
+    animation: fade 1s forwards;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -20px;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: slideDownFade .8s .3s forwards;
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+animation: fade .8s .3s forwards;
+}
+
+/* navigasi */
+.next, .prev {
+    width: 60px;
+    height: 60px;
+    background-image: url(../IMG/panah-kanan.png);
+    position: absolute;
+    top: 270px;
+    margin-left: 30px;
+    text-indent: -9999px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(../IMG/panah-kiri.png);
+    margin-left: -90px;
+}
+
+
+/* animasi */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFade {
+    0% {
+        opacity: 0;
+        /* margin-top: -20px; */
+    }
+    100% {
+        opacity: 1;
+        /* margin-top: 0; */
+    }
+}

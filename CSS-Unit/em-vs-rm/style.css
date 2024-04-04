@@ -1,0 +1,90 @@
+/* html {
+    font-size: 10px;
+} */
+
+/* body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(70, 69, 69);
+    text-align: center;
+    background-color: white;
+    line-height: 1.6;
+    font-weight: 300;
+    min-height: 2000px;
+} */
+
+/* .container {
+    width: 80%;
+    margin: auto;
+}
+
+.typhograpy {
+    display: flex;
+}
+
+.typhograpy .col {
+    flex: 1;
+    margin: 0 0.5em;
+    padding: 0 0.5em;
+}  */
+
+/* em */
+/* .typhograpy {
+    font-size: 10px;
+}
+
+.col-em {
+    font-size: 2em;
+}
+
+.col-em h2 {
+    font-size: 2em;
+}
+
+.col-em p {
+    font-size: 1.5em;
+} */
+
+/* rem typhograpy gunakan rem*/ 
+/* .col-rem {
+    font-size: 10px;
+}
+
+.col-rem h2 {
+    font-size: 2rem;
+}
+
+.col-rem p {
+    font-size: 1.5rem;
+} */
+
+/* .btn {
+    display: inline-block;
+    background-color: #333;
+    font-weight: 700;
+    color: #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    padding: 1em 3em;
+    margin: 0 1.5rem;
+}
+
+.btn-sm {
+    font-size: 0.5em;
+}
+.btn-lg {
+    font-size: 2em;
+} */
+
+.btn {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: 10px auto;
+}
+.klik {
+    background-color: deeppink;
+    height: 2em;
+    width: 4em;
+    border-radius: 10px;
+}

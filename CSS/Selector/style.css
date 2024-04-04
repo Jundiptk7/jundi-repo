@@ -1,0 +1,38 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h2, p{
+    color: sienna;
+}
+
+ol li a {
+    color: darkgoldenrod;
+}
+ul li a {
+    color: seagreen;
+}
+
+ol li, ul li {
+    color: red;
+}
+
+#p1 {
+    color: blue;
+}
+
+.p2 {
+    color: darkmagenta;
+}
+
+.cetak-tebal {
+    font-weight: bold;
+}
+
+p.cetak-tebal {
+    font-size: 20px;
+}
+
+a.cetak-tebal {
+    color: red;
+}

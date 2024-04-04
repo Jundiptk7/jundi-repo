@@ -1,0 +1,35 @@
+h1 {
+    background-color: gold;
+    color: darkred;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150px;
+    font-style: italic;
+    border: 5px solid darkred;
+    margin: 0;
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+p {
+    background-color: gold;
+    color: darkred;
+    text-align: center;
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 30px;
+    margin: auto;    
+    margin-top: 50px;
+    width: 50%;
+    border: 5px solid darkred;
+    padding: 10px;
+}
+
+body {
+    background-color: black;
+}

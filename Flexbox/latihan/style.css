@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+/* latihan 1 */
+.container-satu {
+    width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.kolom-utama {
+    flex: 3;
+    order: 2;
+    background-color: sienna;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.sidebar-satu {
+    flex: 1;
+    order: 1;
+    background-color: rosybrown;
+}
+.sidebar-satu h3 {
+    text-align: center;
+}
+
+.sidebar-dua {
+    flex: 1;
+    order: 3;
+    background-color: lightslategray;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* latihan-2 */
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.layanan {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.layanan.satu { background-color: lightseagreen;
+}
+.layanan.dua { background-color: violet;
+}
+.layanan.tiga {background-color: slateblue;
+}
+
+/* latihan-3 */
+.container-tiga {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+/* latihan-4 */
+.container-empat {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.card {
+    border: 1px solid #575656;
+    border-radius: 10px;
+    background-color: lime;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+.card .header {
+    height: 150px;
+    background-color: brown;
+    text-align: center;
+    line-height: 150px;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card.besar {
+    transform: scale(1.2);
+}
+
+/* latihan 5- centering element mengunakan flex*/
+.container-lima {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 2px solid black ;
+    display: flex;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    color: red;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.kotak span {
+    margin: auto;
+}
+
+/* responsive */
+@media (min-width: 600px) {
+    .container-dua {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .layanan {
+        width: 30%;
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+}
